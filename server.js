@@ -10,7 +10,7 @@ const port = process.env.PORT || 2002;
 dotenv.config();
 const mongo_connect_url = `mongodb+srv://rahulll:${process.env.MONGO_PASSWORD}@cluster0.x2c7d.mongodb.net/test?retryWrites=true&w=majority`;
 
-// middlewares
+// middleware
 app.use(express.json());
 app.use(Cors());
 
