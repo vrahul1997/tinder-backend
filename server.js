@@ -8,9 +8,9 @@ import Cards from "./dbCards.js";
 const app = express();
 const port = process.env.PORT || 2002;
 dotenv.config();
-const mongo_connect_url = `mongodb+srv://rahulll:N20FBJ7BHPAorXS8@cluster0.x2c7d.mongodb.net/test?retryWrites=true&w=majority`;
+const mongo_connect_url = `mongodb+srv://rahulll:${process.env.MONGO_PASSWORD}@cluster0.x2c7d.mongodb.net/test?retryWrites=true&w=majority`;
 
-// middleware
+// middlewares
 app.use(express.json());
 app.use(Cors());
 
